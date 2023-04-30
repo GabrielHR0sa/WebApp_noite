@@ -1,0 +1,42 @@
+﻿@model WebApp_noite.Models.ClientesModel
+
+<div class="row">
+    <div class="col-4">
+    </div>
+
+    <div class="col-4">
+        <div class="card">
+            <div class="card-header">
+                <h2>Cadastro de Cliente</h2>
+            </div>
+            <div class="card-body">
+                <form action="/Cliente/SalvarDados" method="post">
+
+                    <!--
+                        class="row"
+                        começa com 12 (col-12)
+                        row= linha
+                        col= coluna
+                    -->
+
+                    <label>Nome</label>
+                    <input type="text" name="Nome" class="form-control" />
+                    <br />
+                    <label>Telefone</label>
+                    <input type="number" name="Telefone" class="form-control" />
+                    <br />
+                    <label>Senha</label>
+                    <input type="password" name="Senha" class="form-control" />
+                    <br />
+                    <button type="submit" class="btn btn-info">Salvar Cliente</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4">
+    </div>
+</div>
+
+

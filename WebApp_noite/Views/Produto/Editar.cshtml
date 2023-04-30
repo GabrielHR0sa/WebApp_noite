@@ -1,0 +1,40 @@
+﻿@model WebApp_noite.Models.ProdutosModel
+
+<div class="row">
+    <div class="col-4">
+    </div>
+
+    <div class="col-4">
+        <div class="card">
+            <div class="card-header">
+                <h2>Editar Produto</h2>
+            </div>
+            <div class="card-body">
+                <form action="/Produto/SalvarDados" method="post">
+
+                    <!--
+                        class="row"
+                        começa com 12 (col-12)
+                        row= linha
+                        col= coluna
+                    -->
+                    <label>Id</label>
+                    <input readonly name="Id" value="@Model.Id" class="form-control" />
+                    <label>Nome</label>
+                    <input type="text" value="@Model.Nome" name="Nome" class="form-control" />
+                    <br />
+                    <label>Telefone</label>
+                    <input type="number" value="@Model.QtdEstoque" name="QtdEstoque" class="form-control" />
+                    <br />
+                    <button type="submit" class="btn btn-info">Salvar Produto</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-4">
+    </div>
+</div>
+
+
